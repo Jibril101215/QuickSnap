@@ -64,8 +64,8 @@ namespace CardGames
 			if (top != null)
 			{
 				SwinGame.DrawText ("Top Card is " + top.ToString (), Color.RoyalBlue, "GameFont", 0, 10);
-				SwinGame.DrawText (myGame.Score(0), Color.RoyalBlue, "GameFont", 20,50);
-				SwinGame.DrawText (myGame.Score(1), Color.RoyalBlue, "GameFont", 820,50);
+				SwinGame.DrawText (""+myGame.Score(0), Color.RoyalBlue, "GameFont", 20,50);
+				SwinGame.DrawText (""+myGame.Score(1), Color.RoyalBlue, "GameFont", 820,50);
 				SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), top.CardIndex,  521, 153);
 			}
 			else
